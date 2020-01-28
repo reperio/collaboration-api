@@ -1,0 +1,12 @@
+{
+  "name": "collaboration-api",
+  "version": "1.0.0",
+  "description": "API for Reperio Collaboration App",
+  "main": "index.js",
+  "repository": "git@github.com:reperio/collaboration-api.git",
+  "author": "Will Osbourne <will@osbourne.org>",
+  "license": "MIT",
+  "dependencies": {
+    "@reperio/hapijs-starter": "^5.2.0"
+  }
+}
