@@ -18,4 +18,33 @@ module.exports = {
     coreApiUrl: process.env.CORE_API_URL || 'http://reperio-core-app:3000/api',
     coreApiToken: process.env.CORE_API_TOKEN || '',
     applicationToken: process.env.APPLICATION_TOKEN || '',
+    logLevel: process.env.LOG_LEVEL || 'info',
+    logDirectory: process.env.LOG_DIRECTORY || 'logs',
+    database: {
+        client: process.env.DATABASE_CLIENT || 'pg',
+        connection: {
+            database: process.env.DATABASE_NAME || 'reperio_collaboration_dev',
+            host: process.env.DATABASE_HOST || 'reperio-collaboration-postgres',
+            port: process.env.DATABASE_PORT || '5432',
+            user: process.env.DATABASE_USER || 'reperio',
+            pass: process.env.DATABASE_PASS || 'reperio',
+        }
+    },
+    apm: {
+        enabled: process.env.APM_ENABLED || false,
+        serviceName: process.env.APM_SERVICE_NAME || 'reperio-collaboration-dev',
+        serverUrl: process.env.APM_SERVER_URL || 'http://localhost:8200'
+    },
+    redis: {
+        host: process.env.REDIS_URL || 'reperio-collaboration-redis',
+        port: process.env.REDIS_PORT || 6379
+    },
+    coreRedis: {
+        host: process.env.CORE_REDIS_URL || 'reperio-core-redis',
+        port: process.env.CORE_REDIS_PORT || 6379
+    },
+    logObfuscation: {
+        properties: process.env.CORE_LOG_OBFUSCATION_PROPERTIES || ['password', 'confirmPassword', 'secretKey'],
+        mask: process.env.CORE_LOG_OBFUSCATION_MASK || '**********'
+    },
 };
