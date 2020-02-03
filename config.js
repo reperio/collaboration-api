@@ -16,8 +16,8 @@ module.exports = {
     localTimezone: process.env.CORE_TIMEZONE || 'America/New_York',
     webAppUrl: process.env.CORE_APP_URL || 'http://localhost:8083',
     coreApiUrl: process.env.CORE_API_URL || 'http://reperio-core-app:3000/api',
-    coreApiToken: process.env.CORE_API_TOKEN || '',
-    applicationToken: process.env.APPLICATION_TOKEN || '',
+    coreApiToken: process.env.CORE_API_TOKEN || '744dbc8b819956da8d62d485220944a1fd685f27d52d520f79e60802723c591d01f6d89f891e4e4ea1ac6c63aade8f5a',
+    applicationToken: process.env.APPLICATION_TOKEN || '744dbc8b819956da8d62d485220944a1fd685f27d52d520f79e60802723c591d01f6d89f891e4e4ea1ac6c63aade8f5a',
     logLevel: process.env.LOG_LEVEL || 'info',
     logDirectory: process.env.LOG_DIRECTORY || 'logs',
     database: {

@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "API for Reperio Collaboration App",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "migrate": "cd db && knex migrate:latest",
+    "rollback": "cd db && knex migrate:rollback",
+    "seed": "cd db && knex seed:run"
+  },
   "repository": "git@github.com:reperio/collaboration-api.git",
   "author": "Will Osbourne <will@osbourne.org>",
   "license": "MIT",
