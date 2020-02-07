@@ -39,6 +39,11 @@ module.exports = {
         host: process.env.REDIS_URL || 'reperio-collaboration-redis',
         port: process.env.REDIS_PORT || 6379
     },
+    crossbar: {
+        baseURL: process.env.CROSSBAR_BASE_URL || '',
+        accountId: process.env.CROSSBAR_ACCOUNT_ID || '',
+        pvtApiKey: process.env.CROSSBAR_PVT_API_KEY || '',
+    },
     coreRedis: {
         host: process.env.CORE_REDIS_URL || 'reperio-core-redis',
         port: process.env.CORE_REDIS_PORT || 6379

@@ -14,6 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "@reperio/hapijs-starter": "^5.2.0",
+    "@reperio/crossbar": "^2.0.1",
+    "axios": "^0.19.2",
     "boom": "^7.3.0",
     "delay": "^4.3.0",
     "joi": "^14.3.1",
