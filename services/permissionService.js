@@ -16,6 +16,15 @@ class PermissionService {
         }
         return routePermissions.every(val => userPermissions.includes(val));
     }
+
+    /**
+     * Check if User is Super Admin based off of Reperio Core Permissions
+     * 
+     * @param {string[]} userPermissions - Core permissions the user possesses 
+     */
+    userIsSuperAdmin(userPermissions) {
+        return this.userHasRequiredPermissions(userPermissions, ['UpdateOrganizations']);
+    }
 }
 
 const permissionService = new PermissionService();
